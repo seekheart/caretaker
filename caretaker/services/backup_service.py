@@ -35,12 +35,22 @@ def update_git_repos(git_dir):
         os.chdir(git_dir)
 
 
-def get_directories():
+def backup():
+    """
+    master function to run script
+
+    req args:
+    none
+
+    returns:
+    none
+    """
     #get current and home dir
     current_dir = os.getcwd()
     home_dir = os.path.expanduser('~')
     #for directories get everything and then filter
     directories = os.listdir(home_dir)
+    
     for fi in directories:
         #copy my dot bash files to a backup folder
         if '.bash' in fi:
@@ -58,4 +68,4 @@ def get_directories():
 
 
 if __name__ == '__main__':
-    get_directories()
+    backup()
