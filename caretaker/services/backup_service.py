@@ -7,6 +7,7 @@ Mike Tung
 #import libs
 import os
 import subprocess as sb
+from services.paths import *
 import sys
 
 def update_git_repos(git_dir):
@@ -45,11 +46,6 @@ def backup():
     returns:
     none
     """
-    #get current and home dir
-    current_dir = os.getcwd()
-    home_dir = os.path.expanduser('~')
-    #for directories get everything and then filter
-    directories = os.listdir(home_dir)
     
     for fi in directories:
         #copy my dot bash files to a backup folder

@@ -8,6 +8,7 @@ Mike Tung
 import os
 import subprocess as sb
 import sys
+from services.paths import *
 
 def delete_tmp():
     """
@@ -19,11 +20,6 @@ def delete_tmp():
     returns:
     none
     """
-
-    #get dir
-    current_dir = os.getcwd()
-    home_dir = os.path.expanduser('~')
-    directories = os.listdir(home_dir)
 
     temp_dirs = ['tmp', 'scratch', 'temp']
 

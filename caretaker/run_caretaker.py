@@ -10,6 +10,7 @@ import argparse
 import os
 from services.backup_service import *
 from services.tmp_deletion_service import *
+from services.paths import *
 import subprocess as sb
 import sys
 
