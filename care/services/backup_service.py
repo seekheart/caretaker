@@ -35,7 +35,6 @@ def update_git_repos(git_dir):
         print('Done updating repo {}!'.format(repo))
         os.chdir(git_dir)
 
-
 def backup():
     """
     master function to run script
